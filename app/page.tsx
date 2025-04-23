@@ -9,7 +9,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900 to-slate-800 opacity-90 z-0"></div>
         <div
           className="absolute inset-0 z-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/law-office.jpg')" }}
+          style={{ backgroundImage: "url('/law-office.jpg')" }}
         ></div>
         <div className="container mx-auto px-6 relative z-10 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">

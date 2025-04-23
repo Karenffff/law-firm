@@ -138,7 +138,7 @@ export default function AboutPage() {
                 className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
               >
                 <img
-                  src={attorney.image || "/placeholder.svg"}
+                  src={attorney.image }
                   alt={attorney.name}
                   className="w-full h-64 object-cover object-center"
                 />
