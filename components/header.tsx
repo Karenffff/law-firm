@@ -4,6 +4,8 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Menu, X, ChevronDown } from "lucide-react"
+import Image from "next/image"
+
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -56,11 +58,15 @@ export default function Header() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <span className={`text-2xl font-bold ${isScrolled ? "text-gray-800" : "text-white"}`}>
-              <span className="text-amber-500">Madini</span> legal
-            </span>
-          </Link>
-
+         <Image
+         src="/logo.png" // Path to your logo in the public folder
+        alt="Madini Legal"
+          width={100} // adjust size as needed
+          height={300}
+         className="object-contain"
+          priority
+           />
+        </Link>
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             {navLinks.map((link, index) => (
